@@ -4,6 +4,7 @@ spring:
     password: root
     url: jdbc:mysql://127.0.0.1:3306/springboot?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
+#    type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
   config-location: classpath:/mybatis/mybatis-config.xml #指定主配置文件
   mapper-locations: classpath:/mybatis/mapper/*.xml # 指定xml映射文件路径
