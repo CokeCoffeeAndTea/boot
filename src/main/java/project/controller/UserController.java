@@ -11,11 +11,14 @@ import java.util.List;
 @RestController // 相当于异步请求处理 返回结果一般是json数据
 @RequestMapping("/user")
 public class UserController {
-    @Autowired
+    @Autowired //代理对象 AOP编程 JDK动态代理
     UserService userService;
 
     @RequestMapping("/findAll")
     public List<User> findAll(){
+
+        System.out.println("userService.getClass = "+ userService.getClass());
+
         return userService.findAll();
     }
 }
