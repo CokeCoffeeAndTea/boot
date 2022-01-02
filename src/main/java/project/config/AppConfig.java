@@ -2,8 +2,7 @@ package project.config;
 
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import project.bean.User;
+import project.bean.UserYml;
 
 /**
  * 注解开发代替XML：
@@ -15,7 +14,7 @@ import project.bean.User;
 @SpringBootConfiguration  // 等价于@Configuration
 public class AppConfig {
     @Bean //声明bean对象 等价于<bean id="user" class = "project.bean.uUser"></bean>
-    public User user(){
-        return new User();
+    public UserYml user(){
+        return new UserYml();
     }
 }

@@ -1,0 +1,10 @@
+server:
+  port: 8008
+
+userYml:
+  username: zxw
+  password: 123
+
+person:
+  name: people
+  age: 18
